@@ -1,0 +1,50 @@
+.borderBox{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid gray;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.postContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profilePicture {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  .fullName {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .profileText {
+    margin-bottom: 10px;
+  }
+  
+  .commentList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .comment {
+    margin-bottom: 5px;
+  }
+@media (max-width:550px) {
+
+    .borderBox{
+        margin: 1rem;
+        border: 1px solid gray;
+        position: absolute;
+        left: 20%;
+
+    }
+}
