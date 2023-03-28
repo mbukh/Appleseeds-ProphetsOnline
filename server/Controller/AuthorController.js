@@ -33,6 +33,17 @@ const getAuthor = ("Get an Author", async (req, res, next) => {
     }
 });
 
+const searchByName = ("", async (req, res) => {
+    const name = req.query.name;
+    try {
+        const authors = await Author.find({ name: { $regex: name, $options: 'i' } });
+        res.json(authors);
+    } catch (err) {
+        console.error(err);
+        res.status(500).send('Server Error');
+    }
+});
+
 const deleteAuthor = ("Delete an Author", (req, res) => { });
 
 const getAuthors = ("Get All Author", async (req, res, next) => {
@@ -61,4 +72,4 @@ const getAllPostsForAuthor = ("Get All Post For One Author", (req, res, next) =>
             next();
         });
 });
-module.exports = { addAuthor, updateAuthor, getAuthor, deleteAuthor, getAuthors, getAllPostsForAuthor };
+module.exports = { addAuthor, updateAuthor, getAuthor, deleteAuthor, getAuthors, getAllPostsForAuthor, searchByName };

@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const { addAuthor, updateAuthor, getAuthor, deleteAuthor, getAuthors,getAllPostsForAuthor } = require("../Controller/AuthorController");
+const { addAuthor, updateAuthor, getAuthor, deleteAuthor, getAuthors,getAllPostsForAuthor,searchByName } = require("../Controller/AuthorController");
 router.get("/:id", getAuthor);
 router.get("/", getAuthors);
-// router.get("/name", getAuthors);
+router.get("/author/search", searchByName);
 router.post("/", addAuthor);
 router.delete("/:id", deleteAuthor);
 router.put("/:id", updateAuthor);
