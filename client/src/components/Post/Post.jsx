@@ -8,6 +8,23 @@ import React from 'react'
 export default Post
 
 
+// import React from 'react';
+
+// const Post = ({ fullName, profileText, comments }) => {
+//   return (
+//     <div>
+//       <h3>{fullName}</h3>
+//       <p>{profileText}</p>
+//       <ul>
+//         {comments.map((comment, index) => (
+//           <li key={index}>{comment}</li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default Post;
 
 
 
