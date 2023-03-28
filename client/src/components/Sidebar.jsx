@@ -27,33 +27,33 @@ import {
             <ListItem disablePadding>
               <ListItemButton component="a" href="#home">
                 <ListItemIcon>
-                  <Home />
+                  {/* <Home /> */}
                 </ListItemIcon>
-                <ListItemText primary="Homepage" />
+                {/* <ListItemText primary="Homepage" /> */}
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
-                  <Article />
+                  {/* <Article /> */}
                 </ListItemIcon>
-                <ListItemText primary="Pages" />
+                {/* <ListItemText primary="Pages" /> */}
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
-                  <Group />
+                  {/* <Group /> */}
                 </ListItemIcon>
-                <ListItemText primary="Groups" />
+                {/* <ListItemText primary="Groups" /> */}
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
-                  <Storefront />
+                  {/* <Storefront /> */}
                 </ListItemIcon>
-                <ListItemText primary="Marketplace" />
+                {/* <ListItemText primary="Marketplace" /> */}
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
@@ -67,9 +67,9 @@ import {
             <ListItem disablePadding>
               <ListItemButton component="a" href="#simple-list">
                 <ListItemIcon>
-                  <Settings />
+                  {/* <Settings /> */}
                 </ListItemIcon>
-                <ListItemText primary="Settings" />
+                {/* <ListItemText primary="Settings" /> */}
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
