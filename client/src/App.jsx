@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    return (
+        <div class="container">
+            <div class="post">
+                <div class="post-header">
+                    <img src="profile-pic.jpg" />
+                    <h2>John Doe</h2>
+                </div>
+                <div class="post-content">
+                    <p>
+                        Here's my latest post! Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nulla gravida massa ac ipsum blandit, vitae
+                        venenatis ex lobortis. Donec id massa enim. Ut dictum urna sit
+                        amet posuere ultricies. Sed nec dapibus nulla. Nam rhoncus eros in
+                        diam egestas, in aliquam sapien sodales. Integer rutrum, justo id
+                        efficitur ullamcorper, turpis magna sollicitudin orci, quis
+                        commodo nisl felis vel velit. Sed ultricies quam at sapien
+                        lacinia, sed facilisis nisi vulputate. Nulla facilisi. Nam
+                        bibendum lorem vel purus rutrum porttitor.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href="#">Like</a>
+                    <a href="#">Comment</a>
+                    <a href="#">Share</a>
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default App
+export default App;
