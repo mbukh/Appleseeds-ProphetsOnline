@@ -10,10 +10,11 @@ export default Post
 
 // import React from 'react';
 
-// const Post = ({ fullName, profileText, comments }) => {
+// const Post = ({ fullName, profileText, picture, comments }) => {
 //   return (
 //     <div>
 //       <h3>{fullName}</h3>
+//       <img src={picture} alt="Profile Picture" />
 //       <p>{profileText}</p>
 //       <ul>
 //         {comments.map((comment, index) => (
@@ -25,6 +26,7 @@ export default Post
 // };
 
 // export default Post;
+
 
 
 

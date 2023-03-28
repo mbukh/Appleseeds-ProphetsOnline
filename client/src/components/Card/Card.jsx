@@ -41,6 +41,7 @@ export default Card
 //           <Post
 //             fullName={post.fullName}
 //             profileText={post.profileText}
+//             picture={post.picture}
 //             comments={post.comments}
 //           />
 //         </div>
@@ -50,3 +51,4 @@ export default Card
 // };
 
 // export default Card;
+
