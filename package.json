@@ -1,0 +1,37 @@
+{
+    "name": "prophets-online",
+    "version": "1.0.0",
+    "description": "a social media for old school brilliant prophets",
+    "main": "./server/server.js",
+    "type": "commonjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./server/server.js",
+        "server": "node --watch ./server/server.js",
+        "client": "npm run dev --prefix ./client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mbukh/Appleseeds_ProphetsOnline.git"
+    },
+    "keywords": [
+        "prophets",
+        "bible",
+        "torah",
+        "koran"
+    ],
+    "author": "Aml, Hashem, Itamar, Mousab, Moshe",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mbukh/Appleseeds_ProphetsOnline/issues"
+    },
+    "homepage": "https://github.com/mbukh/Appleseeds_ProphetsOnline#readme",
+    "devDependencies": {
+        "concurrently": "^7.6.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2"
+    }
+}
