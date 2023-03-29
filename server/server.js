@@ -27,6 +27,7 @@ const start = async () => {
   const MONGO_URI = process.env.MONGO_URI;
   try {
     await mongoose.connect(MONGO_URI);
+    console.log("Connected to DB");
   } catch (error) {
     throw new Error("failed to connect to db");
   }
