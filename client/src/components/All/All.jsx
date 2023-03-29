@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import LikeButton from '../button/like';
+import LikeButton from '../button/comment';
 // import "./App.css";
 import './All.css'
 function All() {
@@ -85,8 +87,8 @@ function All() {
             </ul>
           <div className="card-body">
          
-            <p>Likes: {post.likesCount}</p>
-            <p>Comments: {post.commentsCount}</p>
+            <p><i class="fa-regular fa-thumbs-up"></i><LikeButton /></p>
+            <p><i class="fa-regular fa-comment"></i><CommentsButton></CommentsButton></p>
             
           </div>
         </div>
